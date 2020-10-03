@@ -1,0 +1,36 @@
+﻿using System;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace Base
+{
+    public partial class App : Application
+    {
+        public App()
+        {
+            Device.SetFlags(new string[] { "MediaElement_Experimental" }); 
+            Device.SetFlags(new string[] { "RadioButton_Experimental" });
+            InitializeComponent();
+
+            MainPage = new MainPage();
+
+            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new TareaClase3());
+            MainPage = new NavigationPage(new TareaClase3Otros());
+            MainPage = new NavigationPage(new ImageScreen());
+            MainPage = new NavigationPage(new TemperatureCalculator());
+        }
+
+        protected override void OnStart()
+        {
+        }
+
+        protected override void OnSleep()
+        {
+        }
+
+        protected override void OnResume()
+        {
+        }
+    }
+}
