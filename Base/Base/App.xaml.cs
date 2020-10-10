@@ -19,6 +19,8 @@ namespace Base
             MainPage = new NavigationPage(new TareaClase3Otros());
             MainPage = new NavigationPage(new ImageScreen());
             MainPage = new NavigationPage(new TemperatureCalculator());
+            MainPage = new NavigationPage(new Semana5());
+            //MainPage = new NavigationPage(new Semana5Ejer2());
         }
 
         protected override void OnStart()
